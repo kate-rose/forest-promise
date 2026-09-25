@@ -4,15 +4,15 @@
 <meta charset="utf-8">
 <meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
 <meta name="description" content="Independent analysis of Skamania County's federal forest payments: the Secure Rural Schools decline, how PILT's subtraction and population ceiling limit the offset, why the 1% levy lid can't backfill it, and the 29 counties in the same bind.">
-<meta property="og:title" content="Skamania's forest check">
-<meta property="og:description" content="Where Skamania County's forest money went, why PILT can't replace it, and 29 counties in the same bind. Open Gorge independent analysis.">
+<meta property="og:title" content="The Forest Promise">
+<meta property="og:description" content="What the nation promised the counties that keep its forests: where Skamania's forest money went, why PILT can't replace it, and 29 counties in the same bind.">
 <meta property="og:type" content="article">
 <base target="_blank">
 <style>*,*::before,*::after{box-sizing:border-box}html{-webkit-text-size-adjust:100%}body{margin:0}img{max-width:100%}[hidden]{display:none!important}</style>
 <script>
 (function(){try{var t=new URLSearchParams(location.search).get('theme');if(t==='light'||t==='dark')document.documentElement.setAttribute('data-theme',t)}catch(e){}})();
 </script>
-<title>Skamania's Forest Check</title>
+<title>The Forest Promise</title>
 <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Barlow+Condensed:wght@500;600;700;800&family=Source+Serif+4:ital,opsz,wght@0,8..60,400;0,8..60,600;1,8..60,400&display=swap">
@@ -38,6 +38,7 @@ body{background:var(--bg);color:var(--ink);font-family:var(--serif);font-size:18
 .mast{display:flex;justify-content:space-between;align-items:baseline;gap:12px;flex-wrap:wrap;
   font-family:var(--serif);font-weight:600;font-size:15px;color:var(--muted);border-bottom:1px solid var(--rule);padding-bottom:12px;}
 h1{font-family:var(--display);font-weight:800;font-size:clamp(46px,8vw,96px);line-height:.92;margin:28px 0 14px;text-wrap:balance;letter-spacing:-.005em}
+.subhead{font-family:var(--display);font-weight:600;font-size:clamp(22px,2.8vw,30px);color:var(--lead);margin:0 0 16px;text-wrap:balance}
 .dek{font-size:clamp(19px,2.2vw,23px);max-width:44ch;margin:0 0 8px;}
 .stats{display:grid;grid-template-columns:repeat(auto-fit,minmax(210px,1fr));gap:28px;margin:34px 0 18px;}
 .stat .n{font-family:var(--display);font-weight:700;font-size:clamp(48px,6vw,72px);line-height:.9;font-variant-numeric:tabular-nums;}
@@ -115,7 +116,8 @@ a:focus-visible{outline:2px solid var(--lead);outline-offset:2px}
 <div class="wrap">
   <div class="mast"><span>Skamania Dispatch · Open Gorge independent analysis</span><span>Figures as of September 25, 2026</span></div>
 
-  <h1>Skamania's forest check</h1>
+  <h1>The Forest Promise</h1>
+  <p class="subhead">What the nation promised the counties that keep its forests</p>
   <p class="dek">The federal forest payment that funds our schools and roads has fallen three-quarters since 2001. Secure Rural Schools authority runs through September 30, 2026. Here is why PILT can't make up the difference, and why the county can't raise it locally.</p>
 
   <aside class="brief" aria-label="In 30 seconds">
@@ -137,6 +139,7 @@ a:focus-visible{outline:2px solid var(--lead);outline-offset:2px}
   <section>
     <div>
       <h2>A payment that fell three-quarters</h2>
+      <p>The promise dates to 1908. Counties couldn't tax the national forests inside their borders, so Congress gave them a share of what the forest earned instead: <a href="https://uscode.house.gov/view.xhtml?req=granuleid:USC-prelim-title16-section500&num=0&edition=prelim">25% of its receipts</a>, for schools and roads.</p>
       <p>Secure Rural Schools replaced the old timber share in 2000, after harvests on the Gifford Pinchot collapsed in the early 1990s. Congress has shrunk it over time and let it lapse more than once. In 1988, before the collapse, the forest paid Skamania County and its schools about $11.4 million.</p>
       <p class="muted small">Skamania is one of four Washington counties where the forest payment is larger than PILT.</p>
     </div>
@@ -406,7 +409,7 @@ a:focus-visible{outline:2px solid var(--lead);outline-offset:2px}
 (function(){
   if(window.parent===window)return;
   var last=0;
-  function send(){var h=Math.ceil(document.documentElement.scrollHeight);if(h!==last){last=h;window.parent.postMessage({type:'forest-check:height',height:h},'*')}}
+  function send(){var h=Math.ceil(document.documentElement.scrollHeight);if(h!==last){last=h;window.parent.postMessage({type:'forest-promise:height',height:h},'*')}}
   window.addEventListener('load',send);
   if(window.ResizeObserver)new ResizeObserver(send).observe(document.documentElement);
   setTimeout(send,1500);

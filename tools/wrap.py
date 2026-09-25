@@ -10,8 +10,8 @@ head = '''<!doctype html>
 <meta charset="utf-8">
 <meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
 <meta name="description" content="Independent analysis of Skamania County's federal forest payments: the Secure Rural Schools decline, how PILT's subtraction and population ceiling limit the offset, why the 1% levy lid can't backfill it, and the 29 counties in the same bind.">
-<meta property="og:title" content="Skamania's forest check">
-<meta property="og:description" content="Where Skamania County's forest money went, why PILT can't replace it, and 29 counties in the same bind. Open Gorge independent analysis.">
+<meta property="og:title" content="The Forest Promise">
+<meta property="og:description" content="What the nation promised the counties that keep its forests: where Skamania's forest money went, why PILT can't replace it, and 29 counties in the same bind.">
 <meta property="og:type" content="article">
 <base target="_blank">
 <style>*,*::before,*::after{box-sizing:border-box}html{-webkit-text-size-adjust:100%}body{margin:0}img{max-width:100%}[hidden]{display:none!important}</style>
@@ -24,7 +24,7 @@ resize = '''
 (function(){
   if(window.parent===window)return;
   var last=0;
-  function send(){var h=Math.ceil(document.documentElement.scrollHeight);if(h!==last){last=h;window.parent.postMessage({type:'forest-check:height',height:h},'*')}}
+  function send(){var h=Math.ceil(document.documentElement.scrollHeight);if(h!==last){last=h;window.parent.postMessage({type:'forest-promise:height',height:h},'*')}}
   window.addEventListener('load',send);
   if(window.ResizeObserver)new ResizeObserver(send).observe(document.documentElement);
   setTimeout(send,1500);

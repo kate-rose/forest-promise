@@ -1,4 +1,4 @@
-# Skamania's forest check
+# The Forest Promise
 
 Open Gorge independent analysis of Skamania County's federal forest payments:
 the Secure Rural Schools decline since 2001, how PILT's subtraction and population
@@ -13,7 +13,7 @@ the levy-scissors model and the Skamania fiscal-case research (archetype rebuild
 
 `?theme=light` or `?theme=dark` pins the colors; with no parameter the page follows
 the reader's system setting. When framed, the page posts its height to the parent as
-`{type: 'forest-check:height', height}` so the iframe can grow to fit.
+`{type: 'forest-promise:height', height}` so the iframe can grow to fit.
 
 Independent analysis by Kate Bertash for the Skamania Dispatch and Open Gorge.
 Anyone can use it.
